@@ -16,8 +16,8 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
+//play 5 rounds
 for (let i = 0; i < 5; i++) {
-    // your code here!
     const playerSelection = prompt("rock, paper, scissors, shoot!");
     const computerSelection = getComputerChoice();
     const result = playRound(playerSelection, computerSelection);
@@ -35,6 +35,5 @@ for (let i = 0; i < 5; i++) {
     }
 console.log(declare());
 }
-//get player selection
 
 //return string that declares winner
