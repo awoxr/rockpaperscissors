@@ -6,7 +6,7 @@ function getComputerChoice() {
 
 //play a round of rock paper scissors
 function playRound(playerSelection, computerSelection) {
-    if (playerSelection === computerSelection) {return "tied"}
+    if (playerSelection === computerSelection) {return "tie"}
     else if (computerSelection === "paper" && playerSelection === "rock" || computerSelection === "scissors" && playerSelection === "paper" || computerSelection === "rock" && playerSelection === "scissors") {
         return 'lose';
     }
@@ -27,7 +27,6 @@ for (let i = 0; i < 5; i++) {
         }
         else if (result === 'win') {
             return(`you win! ${playerSelection} beats ${computerSelection}`);
-            
         }
         else {
             return(`you lose! ${computerSelection} beats ${playerSelection}`);
