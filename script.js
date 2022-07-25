@@ -11,16 +11,34 @@ function playRound(playerSelection, computerSelection) {
         return 'lose';
     }
 
-    else {
+    else if (playerSelection === "paper" && computerSelection === "rock" || playerSelection === "scissors" && computerSelection === "paper" || playerSelection === "rock" && computerSelection === "scissors") {
         return 'win';
+    }
+
+    else {
+        return;
     }
 }
 
 //play 5 rounds
+let playerScore = 0;
+let computerScore = 0;
 for (let i = 0; i < 5; i++) {
     const playerSelection = prompt("rock, paper, scissors, shoot!");
     const computerSelection = getComputerChoice();
     const result = playRound(playerSelection, computerSelection);
+    function score() {
+        if (result === 'win') {
+            playerScore += 1;
+        }
+        else if (result === 'lose') {
+            computerScore += 1;
+        }
+        else {
+            return; 
+        }
+    }
+    score();
     function declare() {
         if (result === 'tie') {
             return("It's a tie!");
@@ -28,11 +46,26 @@ for (let i = 0; i < 5; i++) {
         else if (result === 'win') {
             return(`you win! ${playerSelection} beats ${computerSelection}`);
         }
-        else {
+        else if (result === 'lose') {
             return(`you lose! ${computerSelection} beats ${playerSelection}`);
+        }
+        else {
+            return("something went wrong")
         }
     }
 console.log(declare());
 }
 
-//return string that declares winner
+function finalScore() {
+if (playerScore > computerScore) {
+    return `You win! The score was ${playerScore} to ${computerScore}.`;
+}
+else if (playerScore < computerScore) {
+    return `You lose! The score was ${playerScore} to ${computerScore}`;
+}
+else {
+    return "You and the computer tied!";
+}
+}
+
+console.log(finalScore());
