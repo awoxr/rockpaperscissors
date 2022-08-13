@@ -20,6 +20,18 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
+const buttons = document.querySelectorAll('button');
+
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function(e) {
+        const playerSelection = (this.id);
+        const computerSelection = getComputerChoice();
+        console.log(playerSelection, computerSelection);
+        console.log(playRound(playerSelection, computerSelection));
+});
+}
+
+/*
 //play 5 rounds
 let playerScore = 0;
 let computerScore = 0;
@@ -69,3 +81,4 @@ else {
 }
 
 console.log(finalScore());
+*/
