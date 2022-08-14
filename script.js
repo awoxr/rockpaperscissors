@@ -78,8 +78,8 @@ function roundCheck(round) {
         counter.textContent = `Round ${roundCounter+1}`;
         playerPoints.textContent = `You: ${playerScore}`;
         computerPoints.textContent = `Computer: ${computerScore}`;
-        playerChoice.innerHTML = `Your Choice:`;
-        computerChoice.innerHTML = `Computer's Choice:`;
+        playerChoice.innerHTML = ` `;
+        computerChoice.innerHTML = ` `;
         winner.innerHTML = `Result:`;
         winner.style.backgroundColor = 'lightgrey';
     }
