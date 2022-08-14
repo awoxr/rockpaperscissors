@@ -1,0 +1,112 @@
+h1 {
+    font-size:48px;
+    font-weight:900;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button {
+    background-color: rgb(234, 234, 234);
+    width: 196px;
+    height: 64px;
+    border: 0;
+    border-radius: 20px;
+    font-size:xx-large;
+    text-align: center;
+}
+
+button:active {
+    background-color: rgb(111, 111, 111);
+}
+
+body {
+    background-color: rgb(222, 222, 222);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    gap: 0px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin: 0px;
+}
+
+#scores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    font-size: x-large;
+}
+
+h3 {
+    text-decoration: underline;
+    font-size: x-large;
+}
+
+h5 {
+    margin: 0px;
+}
+#round {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 16px;
+    background-color: rgb(209, 209, 209);
+    width: 256px;
+    height: 96px;
+    color: rgb(45, 45, 45);
+    border-radius: 20px;
+    border: solid rgb(55, 55, 55) 2px;
+    font-size: large;
+}
+
+#winner {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 192px;
+    gap: 8px;
+    text-align: center;
+    height: 64px;
+    border-radius: 20px;
+    color: rgb(222, 222, 222);
+    margin: 0;
+    font-size: x-large;
+}
+
+#scoreboard {
+    width: 192px;
+    height: 144px;
+    background-color: rgb(23, 70, 43);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    color: whitesmoke;
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+    border: solid rgb(135, 92, 13) 8px;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+#counter {
+    font-weight: lighter;
+    font-size: large;
+    margin-bottom: -16px;
+}
