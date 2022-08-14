@@ -80,7 +80,7 @@ function roundCheck(round) {
         computerPoints.textContent = `Computer: ${computerScore}`;
         playerChoice.innerHTML = ` `;
         computerChoice.innerHTML = ` `;
-        winner.innerHTML = `Result:`;
+        winner.innerHTML = ` `;
         winner.style.backgroundColor = 'lightgrey';
     }
     else {
