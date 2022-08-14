@@ -7,6 +7,7 @@ const computerDiv = document.getElementById('computerscore');
 const playerPoints = document.getElementById('playerscore');
 const computerPoints = document.getElementById('computerscore');
 const counter = document.getElementById('counter');
+const popup = document.getElementById("myPopup");
 
 //randomly return rock, paper, or scissors
 function getComputerChoice() {
@@ -69,7 +70,8 @@ function score(result) {
 //check if it is the final round and declare winner if so
 function roundCheck(round) {
     if (round === 5) {
-        alert(finalScore());
+        popup.innerHTML = `${finalScore()}<br>Play again?`;
+        myFunction();
         playerScore = 0;
         computerScore = 0;
         roundCounter = 0;
@@ -149,3 +151,8 @@ else {
 
 //console.log(finalScore());
 */
+
+// When the user clicks on <div>, open the popup
+function myFunction() {
+  popup.classList.toggle("show");
+}
