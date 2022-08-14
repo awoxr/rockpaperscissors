@@ -35,10 +35,10 @@ function playRound(playerSelection, computerSelection) {
 //declare final score
 function finalScore() {
     if (playerScore > computerScore) {
-        return `You win! The score was ${playerScore} to ${computerScore}.`;
+        return `You win! 🎉 The score was ${playerScore} to ${computerScore}.`;
     }
     else if (playerScore < computerScore) {
-        return `You lose! The score was ${playerScore} to ${computerScore}`;
+        return `You lose! ❌ The score was ${playerScore} to ${computerScore}`;
     }
     else {
         return "You and the computer tied!";
