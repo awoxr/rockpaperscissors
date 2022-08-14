@@ -70,7 +70,7 @@ function score(result) {
 //check if it is the final round and declare winner if so
 function roundCheck(round) {
     if (round === 5) {
-        popup.innerHTML = `${finalScore()}<br>Play again?`;
+        popup.innerHTML = `${finalScore()} <br>Play again?`;
         myFunction();
         playerScore = 0;
         computerScore = 0;
@@ -93,8 +93,8 @@ for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", function(e) {
         const playerSelection = (this.id);
         const computerSelection = getComputerChoice();
-        playerChoice.innerHTML = `Your Choice: <b>${playerSelection}</b>.`
-        computerChoice.innerHTML = `Computer's Choice: <b>${computerSelection}</b>.`
+        playerChoice.innerHTML = `Your Choice: <b>${playerSelection}</b>`
+        computerChoice.innerHTML = `Computer's Choice: <b>${computerSelection}</b>`
         let result = playRound(playerSelection, computerSelection);
         winner.innerHTML = `Result: <b>${result}</b>`;
         score(result);
